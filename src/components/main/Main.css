@@ -1,0 +1,46 @@
+.mainStart{
+        margin-top: 50px;
+}
+.pointer{
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    width: 960px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+
+.title {
+    width:650px;
+}
+.row {
+    width: 115px;
+}
+th {
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: #fa4251;
+    line-height: 1.4;
+    background-color: transparent;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #f2f2f2;
+}
+tr:hover {background-color:#f5f5f5;}
