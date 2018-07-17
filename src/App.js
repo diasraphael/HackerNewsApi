@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <div>
-          <div class="sandbox sandbox-correct-pronounciation">
-            <h1 class="heading heading-correct-pronounciation">
+          <div className="sandbox sandbox-correct-pronounciation">
+            <h1 className="heading heading-correct-pronounciation">
               <em>Hacker news API</em>
             </h1>
           </div>

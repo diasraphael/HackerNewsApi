@@ -5,9 +5,6 @@ import {loadUserInfo} from '../../actions/news.js';
 
 import './Main.css';
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        }
 
         onLogout=function (data) {
               this.props.history.push({

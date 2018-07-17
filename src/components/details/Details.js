@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './Details.css'
 class Details extends Component {
 
     render() {
@@ -9,18 +10,48 @@ class Details extends Component {
             
               return (
                    <div>
-                          <a target="_blank" href={this.props.location.state.key.url}>Story</a>
-                          <Link to="/">Home</Link>
-                          <div className="title">{this.props.location.state.key.title}</div>
-                          <div className="row">{this.props.location.state.key.score}</div>
-                          <div className="row">{this.props.location.state.key.by}</div>
-                          <div className="row">{this.props.location.state.key.karma}</div>
-                          <div className="row">{this.props.location.state.key.created}</div>  
-                          <div className="row">{this.props.location.state.key.descendants}</div>
-                          <div className="row">{this.props.location.state.key.id}</div>
-                          <div className="row">{this.props.location.state.key.time}</div>
-                          <div className="row">{this.props.location.state.key.type}</div>  
-                  </div>
+                     <div className="sandbox sandbox-correct-pronounciation">
+                        <h1 className="heading heading-correct-pronounciation">
+                        <em>Details View</em>
+                        </h1>
+                      </div>
+                      <ul id="nav" className="navWidth">
+                          <li>
+                              <a target="_blank" href={this.props.location.state.key.url}>Story</a>
+                          </li>
+                          <li>
+                              <Link to="/">Home</Link>
+                          </li>
+                      </ul>
+                          <div className="mainStart">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th className="title">Title</th>
+                                        <th className="row">Score</th>
+                                        <th className="row">Author</th>
+                                        <th className="row">Author's Karma</th>
+                                        <th className="row">Date Created</th>
+                                        <th className="row">Descendants</th>
+                                        <th className="row">Id</th>
+                                        <th className="row">Time</th>
+                                        <th className="row">Type</th>
+                                    </tr>
+                                    <tr>
+                                        <td className="title">{this.props.location.state.key.title}</td>
+                                        <td className="row">{this.props.location.state.key.score}</td>
+                                        <td className="row">{this.props.location.state.key.by}</td>
+                                        <td className="row">{this.props.location.state.key.karma}</td>
+                                        <td className="row">{this.props.location.state.key.created}</td>
+                                        <td className="row">{this.props.location.state.key.descendants}</td>
+                                        <td className="row">{this.props.location.state.key.id}</td>
+                                        <td className="row">{this.props.location.state.key.time}</td>
+                                        <td className="row">{this.props.location.state.key.type}</td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            </div>
                   )
             
         }
@@ -28,16 +59,6 @@ class Details extends Component {
         return(
   
           <div className="mainStart">
-               <div class="sandbox sandbox-correct-pronounciation">
-					<h1 class="heading heading-correct-pronounciation">
-					<em>Details View</em>
-					</h1>
-		   </div>
-               <ul id="nav" className="chartWidth">
-                    <li>
-                	      <Link to="/">Home</Link>
-			  </li>
-                </ul>
                 {news}
           </div>
         )
